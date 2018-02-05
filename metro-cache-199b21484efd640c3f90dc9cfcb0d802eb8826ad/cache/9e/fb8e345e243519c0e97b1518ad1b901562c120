@@ -1,0 +1,174 @@
+__d(function (global, require, module, exports, _dependencyMap) {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  var _react2 = require(_dependencyMap[0], "react");
+
+  var _react3 = _interopRequireDefault(_react2);
+
+  var _index = require(_dependencyMap[1], "./node_modules/react-transform-hmr/lib/index.js");
+
+  var _index2 = _interopRequireDefault(_index);
+
+  var _jsxFileName = "/home/jesus/Documentos/proyectosJs/node-angular/Leopark/front/front/App.js";
+
+  var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+  var _api = require(_dependencyMap[2], "./Utilities/api");
+
+  var _api2 = _interopRequireDefault(_api);
+
+  var _reactNative = require(_dependencyMap[3], "react-native");
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+  function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+  var _components = {
+    AlignItems: {
+      displayName: "AlignItems"
+    }
+  };
+
+  var _node_modulesReactTransformHmrLibIndexJs2 = (0, _index2.default)({
+    filename: "/home/jesus/Documentos/proyectosJs/node-angular/Leopark/front/front/App.js",
+    components: _components,
+    locals: [module],
+    imports: [_react3.default]
+  });
+
+  function _wrapComponent(id) {
+    return function (Component) {
+      return _node_modulesReactTransformHmrLibIndexJs2(Component, id);
+    };
+  }
+
+  var x = .5;
+  var y = .5;
+  var z = .3;
+  var xR = .68;
+  var yR = .11;
+  var zR = .3;
+  var valTop = y * 100 * 590 / 100;
+  var valLeft = x * 100 * 370 / 100;
+  var valW = z * 100 * 370 / 100;
+  var valH = z * 100 * 590 / 100;
+  var valTopR = yR * 100 * 590 / 100;
+  var valLeftR = xR * 100 * 370 / 100;
+  var valWR = zR * 100 * 370 / 100;
+  var valHR = zR * 100 * 590 / 100;
+
+  var AlignItems = _wrapComponent("AlignItems")(function (_Component) {
+    _inherits(AlignItems, _Component);
+
+    function AlignItems() {
+      _classCallCheck(this, AlignItems);
+
+      return _possibleConstructorReturn(this, (AlignItems.__proto__ || Object.getPrototypeOf(AlignItems)).apply(this, arguments));
+    }
+
+    _createClass(AlignItems, [{
+      key: "render",
+      value: function render() {
+        return _react3.default.createElement(
+          _reactNative.View,
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 35
+            }
+          },
+          _react3.default.createElement(
+            _reactNative.View,
+            {
+              style: styles.wrapper,
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 36
+              }
+            },
+            _react3.default.createElement(
+              _reactNative.View,
+              {
+                style: styles.container,
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 37
+                }
+              },
+              _react3.default.createElement(_reactNative.View, {
+                style: [styles.box1],
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 38
+                }
+              })
+            )
+          ),
+          _react3.default.createElement(
+            _reactNative.View,
+            {
+              style: styles.wrapper,
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 41
+              }
+            },
+            _react3.default.createElement(
+              _reactNative.View,
+              {
+                style: styles.container,
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 42
+                }
+              },
+              _react3.default.createElement(_reactNative.View, {
+                style: [styles.box2],
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 43
+                }
+              })
+            )
+          )
+        );
+      }
+    }]);
+
+    return AlignItems;
+  }(_react2.Component));
+
+  exports.default = AlignItems;
+
+  var styles = _reactNative.StyleSheet.create({
+    wrapper: {
+      flex: 1
+    },
+    container: {
+      flex: .5,
+      flexDirection: 'row'
+    },
+    box1: {
+      position: 'relative',
+      backgroundColor: 'red',
+      top: valTop,
+      left: valLeft,
+      width: valW,
+      height: valH
+    },
+    box2: {
+      position: 'relative',
+      backgroundColor: 'blue',
+      top: valTopR,
+      left: valLeftR,
+      width: valWR,
+      height: valHR
+    }
+  });
+});

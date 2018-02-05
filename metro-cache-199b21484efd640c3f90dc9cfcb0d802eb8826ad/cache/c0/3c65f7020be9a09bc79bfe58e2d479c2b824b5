@@ -1,0 +1,11 @@
+__d(function (global, require, module, exports, _dependencyMap) {
+  var api = {
+    getData: function getData() {
+      var url = ' http://localhost:3978/cuadro/';
+      return fetch(url).then(function (res) {
+        return res.json();
+      });
+    }
+  };
+  module.exports = api;
+});
